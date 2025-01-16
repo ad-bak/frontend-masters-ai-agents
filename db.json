@@ -2,26 +2,46 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather?",
-      "id": "9b6e5ffd-56da-4042-a503-d292cd79d093",
-      "createdAt": "2024-11-05T19:34:16.767Z"
+      "content": "what is the weather today? ",
+      "id": "b82600e1-56ec-43a3-9b59-161bb59513a0",
+      "createdAt": "2025-01-16T21:52:04.899Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_Pd2L6OWnviQmRf7RicWtvE6Y",
+          "id": "call_kZWXzMQiwAZUL0bu3EJIPUPe",
           "type": "function",
           "function": {
-            "name": "get_stuff",
-            "arguments": "{\"reasoning\":\"To provide accurate weather information.\"}"
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"To provide the current weather information.\"}"
           }
         }
       ],
       "refusal": null,
-      "id": "7c3e8fdd-f7f8-4103-9ac4-a361671aca41",
-      "createdAt": "2024-11-05T19:34:17.996Z"
+      "id": "a64baffb-884c-4a6f-8ba2-bb630b1eefaa",
+      "createdAt": "2025-01-16T21:52:06.020Z"
+    },
+    {
+      "role": "tool",
+      "content": "hot, 90deg",
+      "tool_call_id": "call_kZWXzMQiwAZUL0bu3EJIPUPe",
+      "id": "5e48209e-b6e8-4d86-bf10-4d1a757e18c0",
+      "createdAt": "2025-01-16T21:52:06.021Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather today? ",
+      "id": "452d9d59-58b5-4789-9641-ef1bd1a13be1",
+      "createdAt": "2025-01-16T22:53:53.216Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The weather today is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "id": "7f957d2d-1aa9-45a1-a9c2-ec9dcef49227",
+      "createdAt": "2025-01-16T22:53:54.288Z"
     }
   ]
 }
